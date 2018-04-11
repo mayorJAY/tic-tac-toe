@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:text="@string/tic_tac_toe"
+        android:textAlignment="center"
+        android:textColor="#ededed"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/welcome_choose_a_game_board"
+        android:textAlignment="center"
+        android:textColor="#ededed"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button3by3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="51dp"
+        android:layout_weight="1"
+        android:onClick="openNormalBoard"
+        android:text="@string/_3_x_3"
+        android:textColor="#ededed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/button5by5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="51dp"
+        android:layout_weight="1"
+        android:onClick="openAdvancedBoard"
+        android:text="@string/_5_x_5"
+        android:textColor="#ededed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="51dp"
+        android:layout_weight="1"
+        android:onClick="exitGame"
+        android:text="@string/exit"
+        android:textColor="#ededed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>
